@@ -1,0 +1,18 @@
+[submodule "CM3070-Downloader"]
+	path = CM3070-Downloader
+	url = git@github.com:Davidnet/CM3070-Downloader.git
+[submodule "CM3070-Converter"]
+	path = CM3070-Converter
+	url = git@github.com:Davidnet/CM3070-Converter.git
+[submodule "CM3070-Visualizer"]
+	path = CM3070-Visualizer
+	url = git@github.com:Davidnet/CM3070-Visualizer.git
+[submodule "CM3070-EDA"]
+	path = CM3070-EDA
+	url = git@github.com:Davidnet/CM3070-EDA.git
+[submodule "CM3070-Models-Implementation-Evaluation"]
+	path = CM3070-Models-Implementation-Evaluation
+	url = git@github.com:Davidnet/CM3070-Models-Implementation-Evaluation.git
+[submodule "CM3070-Model-Serving-Triton-ONNX"]
+	path = CM3070-Model-Serving-Triton-ONNX
+	url = git@github.com:Davidnet/CM3070-Model-Serving-Triton-ONNX.git
