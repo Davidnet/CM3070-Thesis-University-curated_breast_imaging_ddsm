@@ -1,0 +1,148 @@
+\begin{thebibliography}{23}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bayatmakou et~al.(2025)Bayatmakou, Taleei, Simone, and
+  Mohammadi]{Bayatmakou2025}
+Farzan Bayatmakou, Reza Taleei, Nicole Simone, and Arash Mohammadi.
+\newblock {Mammo-Mamba}: A hybrid state-space and transformer architecture with
+  sequential mixture of experts for multi-view mammography.
+\newblock \emph{arXiv preprint arXiv:2507.17662}, 2025.
+
+\bibitem[Bradbury et~al.(2018)Bradbury, Frostig, Hawkins, et~al.]{Bradbury2018}
+James Bradbury, Roy Frostig, Peter Hawkins, et~al.
+\newblock {JAX}: composable transformations of {P}ython+{N}um{P}y programs,
+  2018.
+\newblock URL \url{https://github.com/google/jax}.
+
+\bibitem[Carriero et~al.(2024)Carriero, Groenhoff, Vologina, Basile, and
+  Albera]{Carriero2024}
+Adriano Carriero, Lisa Groenhoff, Elizaveta Vologina, Paola Basile, and
+  Maurizio Albera.
+\newblock Deep learning in breast cancer imaging: State of the art and recent
+  advancements in early 2024.
+\newblock \emph{Diagnostics}, 14\penalty0 (8):\penalty0 848, 2024.
+
+\bibitem[Clark et~al.(2013)Clark, Vendt, Smith, et~al.]{Clark2013}
+Kenneth Clark, Bruce Vendt, Kirk Smith, et~al.
+\newblock The cancer imaging archive ({TCIA}): Maintaining and operating a
+  public information repository.
+\newblock \emph{J. Digit. Imaging}, 26:\penalty0 1045--1057, 2013.
+
+\bibitem[Dosovitskiy et~al.(2021)Dosovitskiy, Beyer, Kolesnikov,
+  et~al.]{Dosovitskiy2021}
+Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, et~al.
+\newblock An image is worth 16x16 words: Transformers for image recognition at
+  scale.
+\newblock In \emph{Proc. ICLR}, 2021.
+
+\bibitem[Draelos and Carin(2021)]{DraelosCarin2021}
+Rachel~Lea Draelos and Lawrence Carin.
+\newblock Use {HiResCAM} instead of {Grad-CAM} for faithful explanations of
+  convolutional neural networks.
+\newblock \emph{arXiv preprint arXiv:2011.08891}, 2021.
+
+\bibitem[Grant et~al.(2020)Grant, Karau, Lublinsky, Liu, and
+  Filonenko]{Grant2020}
+Trevor Grant, Holden Karau, Boris Lublinsky, Richard Liu, and Ilan Filonenko.
+\newblock \emph{Kubeflow for Machine Learning: From Lab to Production}.
+\newblock O'Reilly Media, 2020.
+
+\bibitem[He et~al.(2016)He, Zhang, Ren, and Sun]{He2016}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition.
+\newblock In \emph{Proc. CVPR}, pages 770--778, 2016.
+
+\bibitem[LeCun et~al.(1998)LeCun, Bottou, Bengio, and Haffner]{LeCun1998}
+Yann LeCun, L{\'e}on Bottou, Yoshua Bengio, and Patrick Haffner.
+\newblock Gradient-based learning applied to document recognition.
+\newblock \emph{Proc. IEEE}, 86\penalty0 (11):\penalty0 2278--2324, 1998.
+
+\bibitem[Lee et~al.(2017)Lee, Gimenez, Hoogi, Miyake, Gorovoy, and
+  Rubin]{Lee2017}
+Rebecca Lee, Francisco Gimenez, Assaf Hoogi, Kanae~K. Miyake, Marina Gorovoy,
+  and Daniel~L. Rubin.
+\newblock A curated mammography data set for use in computer-aided detection
+  and diagnosis research.
+\newblock \emph{Sci. Data}, 4:\penalty0 170177, 2017.
+
+\bibitem[Liu et~al.(2021)Liu, Lin, Cao, et~al.]{Liu2021}
+Ze~Liu, Yutong Lin, Yue Cao, et~al.
+\newblock Swin transformer: Hierarchical vision transformer using shifted
+  windows.
+\newblock In \emph{Proc. ICCV}, pages 10012--10022, 2021.
+
+\bibitem[Lotter et~al.(2021)Lotter, Diab, Haslam, et~al.]{Lotter2021}
+William Lotter, Abdul~Rahman Diab, Bryan Haslam, et~al.
+\newblock Robust breast cancer detection in mammography and digital breast
+  tomosynthesis using an annotation-efficient deep learning approach.
+\newblock \emph{Nat. Med.}, 27\penalty0 (2):\penalty0 244--249, 2021.
+
+\bibitem[Muhammad and Yeasin(2020)]{MuhammadYeasin2020}
+Mohammed~Bany Muhammad and Mohammed Yeasin.
+\newblock Eigen-{CAM}: Class activation map using principal components.
+\newblock In \emph{Proc. IJCNN}, pages 1--7, 2020.
+
+\bibitem[{NVIDIA Corporation}(2025)]{NVIDIA2025}
+{NVIDIA Corporation}.
+\newblock Triton inference server: An optimized cloud and edge inferencing
+  solution, 2025.
+\newblock URL \url{https://github.com/triton-inference-server/server}.
+
+\bibitem[{ONNX Project}(2019)]{ONNX2019}
+{ONNX Project}.
+\newblock Open neural network exchange, 2019.
+\newblock URL \url{https://onnx.ai}.
+
+\bibitem[Raghu et~al.(2019)Raghu, Zhang, Kleinberg, and Bengio]{Raghu2019}
+Maithra Raghu, Chiyuan Zhang, Jon Kleinberg, and Samy Bengio.
+\newblock Transfusion: Understanding transfer learning for medical imaging.
+\newblock In \emph{Proc. NeurIPS}, pages 3347--3357, 2019.
+
+\bibitem[Sawyer-Lee et~al.(2016)Sawyer-Lee, Gimenez, Hoogi, and
+  Rubin]{SawyerLee2016}
+Rebecca Sawyer-Lee, Francisco Gimenez, Assaf Hoogi, and Daniel Rubin.
+\newblock Curated breast imaging subset of {DDSM}, 2016.
+\newblock The Cancer Imaging Archive.
+
+\bibitem[Selvaraju et~al.(2017)Selvaraju, Cogswell, Das, Vedantam, Parikh, and
+  Batra]{Selvaraju2017}
+Ramprasaath~R. Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam,
+  Devi Parikh, and Dhruv Batra.
+\newblock Grad-{CAM}: Visual explanations from deep networks via gradient-based
+  localization.
+\newblock In \emph{Proc. ICCV}, pages 618--626, 2017.
+
+\bibitem[Shen(2017)]{Shen2017}
+Li~Shen.
+\newblock End-to-end training for whole image breast cancer diagnosis using an
+  all convolutional design.
+\newblock \emph{arXiv preprint arXiv:1708.09427}, 2017.
+
+\bibitem[Valbuena-Garcia et~al.(2025)Valbuena-Garcia, Trujillo-Caceres,
+  Hernandez~Vargas, et~al.]{ValbuenaGarcia2025}
+A.~M. Valbuena-Garcia, S.~J. Trujillo-Caceres, J.~A. Hernandez~Vargas, et~al.
+\newblock Quality of care in {C}olombian women with early-onset breast cancer
+  in two time periods: findings from a nationwide administrative registry
+  cohort.
+\newblock \emph{Lancet Reg. Health -- Am.}, 43:\penalty0 101018, 2025.
+
+\bibitem[{W3C}(2018)]{W3C2018}
+{W3C}.
+\newblock Web content accessibility guidelines ({WCAG}) 2.1, 2018.
+\newblock URL \url{https://www.w3.org/TR/WCAG21/}.
+
+\bibitem[Wang(2024)]{Wang2024}
+Lulu Wang.
+\newblock Mammography with deep learning for breast cancer detection.
+\newblock \emph{Front. Oncol.}, 14:\penalty0 1281922, 2024.
+
+\bibitem[Wightman(2019)]{Wightman2019}
+Ross Wightman.
+\newblock {PyTorch} image models, 2019.
+\newblock URL \url{https://github.com/huggingface/pytorch-image-models}.
+
+\end{thebibliography}

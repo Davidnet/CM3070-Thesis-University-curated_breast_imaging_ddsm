@@ -1,0 +1,71 @@
+\documentclass[12pt, a4paper]{article}
+
+% Packages
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{parskip}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vspace*{1.5cm}
+
+    % University name
+    {\Large\bfseries University of London \par}
+    \vspace{0.6cm}
+    {\large\bfseries Project submission \par}
+
+    \vspace{1.2cm}
+
+    % Crest — prefer vector PDF exported from SVG, with PNG as a fallback.
+    \IfFileExists{university-of-london-compat.pdf}{
+        \includegraphics[width=0.28\textwidth]{university-of-london-compat.pdf}
+    }{
+    \IfFileExists{university-of-london.pdf}{
+        \includegraphics[width=0.28\textwidth]{university-of-london.pdf}
+    }{
+    \IfFileExists{uol-crest.png}{
+        \includegraphics[width=0.28\textwidth]{uol-crest.png}
+    }{
+        \fbox{\rule{0pt}{3.5cm}\rule{0.28\textwidth}{0pt}}
+    }
+    }
+    }
+
+    \vspace{1.4cm}
+
+    % Report label
+    {\large\bfseries\underline{CM3070 PROJECT} \par}
+    \vspace{0.1cm}
+    {\large\bfseries\underline{FINAL PROJECT REPORT} \par}
+
+    \vspace{1.2cm}
+
+    % Title
+    {\large
+        Interpretable \& Efficient AI pipeline for \\
+        Mammography-Based Breast Cancer Detection
+    \par}
+
+    \vfill
+
+    % Author block — left-aligned within a fixed-width box
+    \begin{minipage}{0.6\textwidth}
+        \raggedright
+        \textbf{Author:} GERMAN DAVID CARDOZO BOLIVAR \\
+	\textbf{Specialization:} Machine Learning and Artificial Intelligence \\
+        \textbf{Student Number:} 220155092 \\
+        \textbf{Project word count:} 10,328 / 10,500 \\
+    \end{minipage}
+
+    \vspace{1.5cm}
+\end{titlepage}
+
+\end{document}

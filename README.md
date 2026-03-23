@@ -11,6 +11,45 @@ This repository is the top-level entrypoint for the CM3070 thesis project on cur
 
 The intent of this repository is reproducibility: one place to clone, initialize, and navigate the full thesis codebase.
 
+## Author
+
+David Cardozo  
+Student, University of London  
+
+## Thesis Objective
+
+This thesis is motivated by the need for a scalable and computationally feasible pipeline for breast cancer image analysis in Colombia. More specifically, the project brings together data acquisition, preprocessing, validation, exploratory analysis, model development, evaluation, and deployment-oriented serving in order to support the construction of an end-to-end diagnostic workflow based on curated mammographic data. The aim is not merely to train isolated models, but to establish a reproducible technical pipeline through which breast cancer classification can be studied, compared, and operationalized under realistic computational constraints. An additional objective is to explore the practical capabilities of JAX, Flax, and TPU-based training in the context of medical imaging, both as a means of accelerating experimentation and as a way of assessing their suitability for large-scale deep learning workflows.
+
+## Research Questions
+
+This thesis is guided by the following research questions:
+
+1. What level of performance can be achieved using classical linear baselines on the curated CBIS-DDSM patch classification task?
+2. How much improvement is obtained when replacing linear baselines with deep learning models trained from scratch?
+3. Do pretrained `timm` models provide a further performance advantage over from-scratch deep learning approaches?
+
+## Project Contributions
+
+The project makes the following practical contributions:
+
+1. It modernizes the technical stack used to acquire and process the dataset, replacing ad hoc or informal acquisition practices with a more reproducible workflow.
+2. It provides a correct and efficient pathway for downloading the source data directly, rather than relying on repackaged copies from secondary platforms such as Kaggle.
+3. It establishes a scalable pipeline for converting the raw imaging files into formats that can be consumed consistently by downstream machine learning workflows.
+4. It organizes the full process of downloading, converting, validating, exploring, modelling, evaluating, and serving the data into a single repository collection designed for reproducibility.
+
+## Reproducibility Boundaries
+
+This repository collection is designed to maximize reproducibility, but full reproduction of all stages depends on the computational environment available to the reader.
+
+- The repository structure, submodule relationships, documentation, figure-generation code, and evaluation pipeline are reproducible directly from version-controlled sources.
+- Python-based components are reproducible through the `uv`-managed environments defined in their respective repositories, and the JAX-based parts of the stack are included precisely to support a modern and reproducible research workflow.
+- This project uses Google Cloud Platform (GCP) for its cloud-based stages. Because these stages are defined through version-controlled configuration files and containerized workloads, they are designed to be reproducible within GCP, subject to the availability of the required credentials, services, and compute resources.
+- Many stages of the project are containerized, which makes them portable across execution environments. In practice, this means that substantial parts of the pipeline can be run locally, on hyperscaler infrastructure, or in other cloud environments, provided the required dependencies and resources are available.
+- Data acquisition and preprocessing workflows are therefore reproducible in principle across environments, although some stages in this specific implementation also depend on Google Cloud services or access to persisted storage locations.
+- Large-scale conversion and orchestration workflows in the current project configuration depend on Google Cloud Batch, Cloud Storage, Artifact Registry, and the corresponding credentials and quotas.
+- TPU-based experiments require access to compatible TPU infrastructure, while GPU-based training and model serving require suitable accelerator hardware.
+- For these reasons, the collection should be understood as fully reproducible at the level of code, configuration, and workflow design, while full execution of every stage may still depend on external infrastructure and resource availability.
+
 ## Repository role
 
 This repo acts as a meta-repository for the thesis. The actual implementation work lives inside submodules.
@@ -61,7 +100,7 @@ Typical responsibility:
 - run the NBIA retriever against the provided manifest
 - persist downloaded files to a mounted host directory
 - build the downloader container image with `cloudbuild.yaml`
-- run the batch configuration in `download.yaml` when using the Google Cloud workflow
+- use `download.yaml` to rehydrate or resume the dataset state from the persisted Google Cloud Storage copy when running the Google Cloud workflow
 
 In GCP terms, the two YAML files play different roles:
 
@@ -191,7 +230,7 @@ If you are approaching the project from scratch, a reasonable order is:
 
 - Most repositories are independent and maintain their own environments and dependencies.
 - Cloud-oriented components assume access to Google Cloud services and the relevant credentials.
-- Some repositories use `uv` for Python environment management.
+- Every Python repository in this collection uses `uv` as its package and environment manager.
 - The project spans local workflows, Google Cloud Batch pipelines, TPU training, and GPU-backed serving, so prerequisites differ by submodule.
 
 ## Submodule summary
