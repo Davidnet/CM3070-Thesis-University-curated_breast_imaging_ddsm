@@ -1,5 +1,9 @@
 # CM3070 Thesis Repository Collection
 
+Final model deployed: https://storage.googleapis.com/davidcardozo-final-london-demo/index.html
+
+**Note to the reviewer**: Please click (Wake Server) so that a gpu machine is provided to you (2 - 3 mins).
+
 This repository is the top-level entrypoint for the CM3070 thesis project on curated breast imaging with CBIS-DDSM. It does not hold a single implementation. Instead, it organizes the full project as a set of Git submodules, each covering one stage of the workflow:
 
 - dataset download
