@@ -1,5 +1,7 @@
 # CM3070 Thesis Repository Collection
 
+**Note**: This thesis was submitted on March 21, 2026. The full text is available as a PDF: [final_report.pdf](./latex/final_report.pdf).
+
 Final model deployed: https://storage.googleapis.com/davidcardozo-final-london-demo/index.html
 
 **Note to the reviewer**: Please click (Wake Server) so that a gpu machine is provided to you (2 - 3 mins).
